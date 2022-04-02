@@ -1,0 +1,64 @@
+@import '/styles/vars';
+@import '/styles/boxes';
+@import '/styles/inputs';
+
+.c_images {
+  display: grid;
+  gap: $gap;
+
+  @media screen and (min-width: 769px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .c_image {
+    padding: $pad;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    @include box;
+  }
+}
+
+.c_about {
+  text-align: center;
+
+  @include box;
+}
+
+.c_schedule {
+  @include box;
+}
+
+.c_map {
+  padding: $pad;
+
+  iframe {
+    overflow: hidden;
+    border-radius: $radius;
+  }
+
+  @include box;
+}
+
+.c_contact {
+  display: grid;
+
+  .c_form {
+    text-align: center;
+    display: grid;
+    font-style: italic;
+
+    button {
+      font-family: 'Dancing Script', cursive;
+      font-weight: bold;
+      font-size: 2rem;
+    }
+
+    @include standarInputs;
+  }
+
+  @include box;
+}

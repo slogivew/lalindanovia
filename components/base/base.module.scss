@@ -1,0 +1,11 @@
+@import '/styles/vars';
+@import '/styles/boxes';
+
+.c_base {
+  @media screen and (min-width: 769px) {
+    width: 75%;
+    margin: $pad auto;
+  }
+
+  margin: $pad;
+}

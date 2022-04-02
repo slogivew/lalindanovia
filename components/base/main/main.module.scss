@@ -1,0 +1,7 @@
+@import '/styles/vars';
+
+.c_main {
+  display: grid;
+  gap: $gap;
+  margin: $pad 0;
+}

@@ -1,0 +1,24 @@
+@import '/styles/vars';
+@import '/styles/boxes';
+
+.c_nav {
+  display: grid;
+  gap: calc(#{$gap} * 2);
+  text-align: center;
+  padding: calc(#{$pad} * 2) $pad !important;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h1,
+  p {
+    margin: 0;
+  }
+
+  p {
+    line-height: calc(#{$pad} + 5px);
+  }
+
+  @include box;
+}

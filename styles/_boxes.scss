@@ -1,0 +1,23 @@
+@import '/styles/vars';
+
+@mixin box() {
+  display: grid;
+  padding: $pad;
+  border-radius: $radius;
+  background-color: #ffd9d8;
+
+  h3 {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.33);
+}
+
+@mixin box-child() {
+  display: grid;
+  padding: $pad;
+  border-radius: $radius;
+}
